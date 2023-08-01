@@ -4,7 +4,16 @@
   "description": "",
   "main": "dist/liq-credentials.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "make build",
+    "lint": "make lint",
+    "lint:fix": "make lint-fix",
+    "test": "make test",
+    "preversion": "make qa",
+    "prepare": "make build",
+    "qa": "make qa"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [],
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
@@ -13,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/liquid-labs/liq-credentials/issues"
   },
-  "homepage": "https://github.com/liquid-labs/liq-credentials#readme"
+  "homepage": "https://github.com/liquid-labs/liq-credentials#readme",
+  "devDependencies": {
+    "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.20"
+  },
+  "dependencies": {
+    "@liquid-labs/http-smart-response": "^1.0.0-alpha.3",
+    "@liquid-labs/liq-credentials-db": "^1.0.0-alpha.3",
+    "@liquid-labs/liq-defaults": "^1.0.0-alpha.2",
+    "@liquid-labs/liq-handlers-lib": "^1.0.0-alpha.16"
+  }
 }
