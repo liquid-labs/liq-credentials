@@ -9,7 +9,7 @@
     "lint:fix": "make lint-fix",
     "test": "make test",
     "preversion": "make qa",
-    "prepare": "make build",
+    "prepack": "make build",
     "qa": "make qa"
   },
   "engines": {
