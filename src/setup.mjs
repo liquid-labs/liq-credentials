@@ -5,7 +5,7 @@ const setup = async({ app, model }) => {
 }
 
 const setupPathResolvers = ({ app, model }) => {
-  app.liq.pathResolvers.credential = {
+  app.ext.pathResolvers.credential = {
     bitReString    : '(?:' + CRED_TYPES.join('|') + ')',
     optionsFetcher : ({ currToken = '' }) => {
       const results = []
