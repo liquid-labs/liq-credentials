@@ -1,0 +1,9 @@
+Test git rev: d8362077c9b72323a256d3ded6749afca9e66abc
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In /Users/zane/.liq/playground/liquid-labs/liq-credentials/test-staging
+  6 files checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: /node_modules/ - 6 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
