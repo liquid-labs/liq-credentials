@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/liquid-labs/liq-credentials#readme",
   "devDependencies": {
-    "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.20"
+    "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.21"
   },
   "dependencies": {
     "@liquid-labs/http-smart-response": "^1.0.0-alpha.3",
