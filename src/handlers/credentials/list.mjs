@@ -28,7 +28,6 @@ const func = ({ app, cache, model, reporter }) => async(req, res) => {
   credDB.verifyCreds({ reVerify : verify })
 
   const data = credDB.list()
-  console.error('data:', data) // DEBUG
 
   formatOutput({
     basicTitle    : 'Local Credentials',
