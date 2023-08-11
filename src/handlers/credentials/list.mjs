@@ -23,13 +23,15 @@ const textFormatter = ({ data: creds, title }) => terminalFormatter(creds, title
 const func = ({ app, cache, model, reporter }) => async(req, res) => {
   const { verify } = req.vars
 
-  const credDB = new CredentialsDB({ app, cache })
+  const credDB = app.ext.credentialsDB
 
   credDB.verifyCreds({ reVerify : verify })
 
+  const data = credDB.list()
+
   formatOutput({
     basicTitle    : 'Local Credentials',
-    data          : credDB.list(),
+    data,
     mdFormatter,
     terminalFormatter,
     textFormatter,

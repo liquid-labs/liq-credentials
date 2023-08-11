@@ -24,11 +24,16 @@
   },
   "homepage": "https://github.com/liquid-labs/liq-credentials#readme",
   "devDependencies": {
-    "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.21"
+    "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.21",
+    "@liquid-labs/liq-core": "^1.0.0-alpha.21",
+    "@liquid-labs/liq-projects": "^1.0.0-alpha.8",
+    "@liquid-labs/liq-test-lib": "^1.0.0-alpha.3",
+    "@liquid-labs/shell-toolkit": "^1.0.0-alpha.7",
+    "supertest": "^6.3.3"
   },
   "dependencies": {
     "@liquid-labs/http-smart-response": "^1.0.0-alpha.3",
-    "@liquid-labs/liq-credentials-db": "^1.0.0-alpha.3",
+    "@liquid-labs/liq-credentials-db": "^1.0.0-alpha.6",
     "@liquid-labs/liq-defaults": "^1.0.0-alpha.2",
     "@liquid-labs/liq-handlers-lib": "^1.0.0-alpha.16"
   }
