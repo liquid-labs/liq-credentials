@@ -150,6 +150,6 @@ test: $(TEST_TARGETS)
 
 lint: $(LINT_TARGETS)
 
-qa: lint
+qa: test lint
 
 all: build
