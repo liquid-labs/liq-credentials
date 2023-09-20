@@ -1,4 +1,9 @@
-const setup = async({ app, model }) => {
+import { CredentialsDB } from '@liquid-labs/liq-credentials-db'
+
+const setup = async({ app, cache, model }) => {
+  const credentialsDB = new CredentialsDB({ cache })
+  app.ext.credentialsDB = credentialsDB
+
   setupPathResolvers({ app, model })
 }
 
