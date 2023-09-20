@@ -25,7 +25,7 @@
   "homepage": "https://github.com/liquid-labs/liq-credentials#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.21",
-    "@liquid-labs/liq-core": "^1.0.0-alpha.21",
+    "@liquid-labs/liq-core": "^1.0.0-alpha.22",
     "@liquid-labs/liq-projects": "^1.0.0-alpha.8",
     "@liquid-labs/liq-test-lib": "^1.0.0-alpha.3",
     "@liquid-labs/shell-toolkit": "^1.0.0-alpha.7",
