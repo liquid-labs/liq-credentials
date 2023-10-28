@@ -24,7 +24,7 @@ const parameters = [
   }
 ]
 
-const func = ({ app, cache, model, reporter }) => async(req, res) => {
+const func = ({ app }) => async(req, res) => {
   const credDB = app.ext.credentialsDB
   const { copyToStorage, credential, path: srcPath, replace } = req.vars
 
