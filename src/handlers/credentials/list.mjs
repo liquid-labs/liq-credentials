@@ -20,8 +20,8 @@ const terminalFormatter = ({ data: creds, title }) =>
 
 const textFormatter = ({ data: creds, title }) => terminalFormatter(creds, title).replaceAll(/<[a-z]+>/g, '')
 
-const func = ({ app, cache, model, reporter }) => async(req, res) => {
-  const { verify } = req.vars
+const func = ({ app, reporter }) => async(req, res) => {
+  const { verify = false } = req.vars
 
   const credDB = app.ext.credentialsDB
 
