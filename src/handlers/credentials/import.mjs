@@ -15,12 +15,12 @@ const parameters = [
     name          : 'path',
     required      : true,
     isSingleValue : true,
-    descirption   : 'Local path to the credential file.'
+    description   : 'Local path to the credential file.'
   },
   {
     name        : 'copyToStorage',
     isBoolean   : true,
-    descirption : 'When set, copies the credential file from [`path`](#param-path) to centralized storage under the `$LIQ_HOME/credentials` (`LIQ_HOME` is typically `$HOME/.liq`). Otherwise by default, we reference the credentials in-place.'
+    description : 'When set, copies the credential file from [`path`](#param-path) to centralized storage under the `$LIQ_HOME/credentials` (`LIQ_HOME` is typically `$HOME/.liq`). Otherwise by default, we reference the credentials in-place.'
   }
 ]
 
