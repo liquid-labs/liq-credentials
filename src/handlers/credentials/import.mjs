@@ -28,7 +28,7 @@ const func = ({ app }) => async(req, res) => {
   const credDB = app.ext.credentialsDB
   const { copyToStorage, credential, path: srcPath, replace } = req.vars
 
-  const destPath = copyToStorage === true ? fsPath.join(app.ext.serverHome, CREDS_PATH_STEM) : undefined
+  const destPath = copyToStorage === true ? fsPath.join(app.ext.serverConfigRoot, CREDS_PATH_STEM) : undefined
 
   await credDB.import({ destPath, key : credential, srcPath, replace })
 
